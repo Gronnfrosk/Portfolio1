@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+}
+h1 {
+    font-family: consolas, "Courier New", monospace;
+    margin: 100px auto 50px auto;
+    text-align: center;
+    font-size: 2em;
+}
+h2, a {
+    font-family: consolas, "Courier New", monospace;
+    text-align: center;
+}
+section {
+    max-width: 30%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 20px solid #eaf3ea;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+img {
+    max-width: 100%;
+    max-height: 400px
+}
+.image {
+    text-align: center;
+}
+p {
+    font-family: roboto, "Courier New", monospace;
+    width: 90%;
+    margin: 50px auto;  
+    line-height: 1.5;  
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+a {
+    font-family: roboto, "Courier New", monospace;
+    text-decoration: none;
+    color: black;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+a:hover {
+    border-bottom: 5px solid #5f2b7b;
+    font-weight: bold;
+
+}
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
+.fa-frog {
+    color: green;
+    font-size: 2em;
+    margin: 0 20px;
+}
+.fa-github, .fa-linkedin {
+    font-size: 1.5em;
+    color: rgb(0, 87, 0);
+}
+/*mobile styles*/
+@media only screen and (max-width: 780px) {}
+
+/*desktop/tablet styles*/
+@media only screen and (min-width: 781px) {}
