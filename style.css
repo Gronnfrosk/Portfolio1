@@ -3,7 +3,7 @@ body {
 }
 h1 {
     font-family: consolas, "Courier New", monospace;
-    margin: 100px auto 50px auto;
+    margin: 50px auto;
     text-align: center;
     font-size: 2em;
 }
@@ -12,7 +12,7 @@ h2, a {
     text-align: center;
 }
 section {
-    max-width: 30%;
+    max-width: 20%;
     min-width: 300px;
     display: flex;
     flex-direction: column;
@@ -60,6 +60,7 @@ a:hover {
 footer {
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 50px
 }
 .fa-frog {
     color: green;
