@@ -21,7 +21,7 @@ h2, a {
     text-align: center;
 }
 h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 section {
@@ -63,7 +63,7 @@ a {
     text-decoration: none;
     color: black;
     line-height: 1.5;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 a:hover {
     border-bottom: 5px solid #5f2b7b;
@@ -89,6 +89,9 @@ footer {
 @media only screen and (max-width: 780px) {
     section {
         border: 10px outset #eaf3ea;
+    }
+    p {
+        width: 100%;
     }
 }
 
