@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+}
+
+.avatar {
+    width: 70px;
+    position: fixed;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+
+    & p {
+        width: 100%;
+    }
+}
+
+h1 {
+    font-family: consolas, "Courier New", monospace;
+    margin: auto;
+    text-align: center;
+    border-bottom: 10px double #5f2b7b;
+    width: 250px;
+}
+
+header {
+    text-align: center;
+
+    & p {
+        margin: 10px auto 0 auto;
+        width: 320px;
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    & h2,
+    a {
+        font-family: consolas, "Courier New", monospace;
+        text-align: center;
+    }
+
+    & h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    & section {
+        max-width: 22%;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        border: 20px outset #eaf3ea;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    & img {
+        max-width: 100%;
+        max-height: 400px
+    }
+
+    & .image {
+        text-align: center;
+    }
+
+    & p {
+        width: 95%;
+        margin: 20px auto;
+        line-height: 1.5;
+    }
+
+    & .buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+
+        & .btn {
+            border-radius: 0;
+            border: none;
+            background-color: rgb(0, 87, 0);
+        }
+
+        & .btn:hover {
+            background-color: #5f2b7b;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+
+    & .fa-frog {
+        color: rgb(0, 87, 0);
+        font-size: 2em;
+        margin: 0 20px;
+    }
+
+    & .fa-github,
+    .fa-linkedin {
+        font-size: 1.5em;
+        color: rgb(0, 87, 0);
+    }
+
+    & .fa-github:hover,
+    .fa-linkedin:hover {
+        color: #5f2b7b;
+    }
+}
+
+
+
+/*mobile styles*/
+@media only screen and (max-width: 780px) {
+    .avatar {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    main {
+        & section {
+            border: 10px outset #eaf3ea;
+        }
+
+        & p {
+            width: 100%;
+        }
+    }
+}
