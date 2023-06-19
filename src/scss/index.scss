@@ -90,6 +90,16 @@ main {
     }
 }
 
+.fa-brands {
+    font-size: 1.2em;
+    color: rgb(0, 87, 0);
+}
+
+.fa-github:hover,
+.fa-linkedin:hover {
+    color: #5f2b7b;
+}
+
 footer {
     text-align: center;
     margin-top: 20px;
@@ -105,12 +115,6 @@ footer {
     & .fa-github,
     .fa-linkedin {
         font-size: 1.5em;
-        color: rgb(0, 87, 0);
-    }
-
-    & .fa-github:hover,
-    .fa-linkedin:hover {
-        color: #5f2b7b;
     }
 }
 
