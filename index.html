@@ -5,60 +5,75 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="My portfolio from my study of front-end development at Noroff" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./dist/css/index.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+			crossorigin="anonymous"
+		>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+			crossorigin="anonymous"
+		></script>
 		<script src="https://kit.fontawesome.com/fecd9f1338.js" crossorigin="anonymous"></script>
 		<title>My Portfolio</title>
 	</head>
 	<body>
-		<header>
-			<h1>Portfolio</h1>
-			<p>Hello! Welcome to my portfolio website. Here are my achievements from my first year of front-end development at noroff.</p>
+		<header class="mb-4">
+			<div class="avatar shadow py-2 bg-body rounded-bottom rounded-5">
+				<img src="/images/fedwsfed.jpg" class="rounded-circle w-75 m-auto"/>
+				<p>Hanna Fjeldsaa</p>
+			</div>
+			<h1 class="fs-2 mt-4">Portfolio</h1>
+			<p>Hello! Welcome to my portfolio page. Here are my projects from my first year study of front-end development at noroff.</p>
 		</header>
 		<main>
 			<section>
-				<h2>GameHub - Online shop</h2>
+				<h2 class="fs-4">GameHub - Online shop</h2>
 				<div class="image"><img src="/images/GameHub.png" /></div>
 				<p>
 					GameHub is an fictional shop where users can purchase computer games online. The online shop have an add to cart and save game feature which is stored
-					in the local storage. The products are fetched from a WordPress API and the details page is dynamically built showing the game that was clicked. The
-					website is responsive across screen sizes and contains 10 different pages from home page to checkout success page.
+					in the local storage. The products are fetched from a WordPress API and the details page is dynamically built showing the game that gets clicked. The
+					website is responsive across screen sizes.
 				</p>
-				<div class="links">
-					<a href="https://github.com/Noroff-FEU-Assignments/cross-course-project-Gronnfrosk">Link to GitHub repo</a>
-					<a href="https://determined-mirzakhani-cd7f68.netlify.app/">Link to live website</a>
+				<div class="buttons">
+					<a href="https://github.com/Noroff-FEU-Assignments/cross-course-project-Gronnfrosk" class ="btn btn-success  w-100">Repository</a>
+					<a href="https://determined-mirzakhani-cd7f68.netlify.app/" class ="btn btn-success  w-100">Live site</a>
 				</div>
 			</section>
 			<section>
-				<h2>Community Science Museum</h2>
+				<h2 class="fs-4">Community Science Museum</h2>
 				<div class="image"><img src="/images/community.png" /></div>
 				<p>
 					The museum wanted a website that is informative, appealing and that will attract both middle school pupils and their parents. The website is
 					informative and engaging, but also encourage viewers to visit the museum itself. This website is responsive, following WCAG principles and DRY
 					principle. The website also contains 4 different pages and are built with HTML and CSS.
 				</p>
-				<div class="links">
-					<a href="https://github.com/Gronnfrosk/Semester-Project-1">Link to GitHub repo</a>
-					<a href="https://sad-saha-78e1e6.netlify.app/">Link to live website</a>
+				<div class="buttons">
+					<a href="https://github.com/Gronnfrosk/Semester-Project-1" class ="btn btn-success w-100">Repository</a>
+					<a href="https://sad-saha-78e1e6.netlify.app/" class ="btn btn-success w-100">Live site</a>
 				</div>
 			</section>
 			<section>
-				<h2>Goldy - Blog</h2>
+				<h2 class="fs-4">Goldy - Blog</h2>
 				<div class="image"><img src="/images/goldydog.png" /></div>
 				<p>
 					This blog is about the dog Goldy and contains stories about her daily adventures. The website is built with HTML, CSS and JavaScript while fetching
 					content from WordPress REST API. The site is responsive and easy to use on a variety of devices and screen sizes. The blog follows the WCAG principles
 					and DRY principle. This website contains 5 different pages.
 				</p>
-				<div class="links">
-					<a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Gronnfrosk">Link to GitHub repo</a>
-					<a href="https://zingy-sherbet-e1fd04.netlify.app/">Link to live website</a>
+				<div class="buttons">
+					<a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Gronnfrosk" class ="btn btn-success  w-100">Repository</a>
+					<a href="https://zingy-sherbet-e1fd04.netlify.app/" class ="btn btn-success  w-100">Live site</a>
 				</div>
 			</section>
 		</main>
 		<footer>
-			<a href="https://github.com/Gronnfrosk" title="GitHub"><i class="fa-brands fa-github"></i></a>
+			<a href="https://github.com/Gronnfrosk" title="My GitHub profile"><i class="fa-brands fa-github"></i></a>
 			<i class="fa-duotone fa-frog"></i>
-			<a href="https://www.linkedin.com/in/hanna-fjeldsaa-0b4797127/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="https://www.linkedin.com/in/hanna-fjeldsaa-0b4797127/" title="My LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
 		</footer>
 	</body>
 </html>
