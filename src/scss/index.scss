@@ -1,33 +1,58 @@
 body {
     margin: 0;
-}
-
-.avatar {
-    width: 70px;
-    position: fixed;
-    right: 25px;
-    display: flex;
-    flex-direction: column;
-
-    & p {
-        width: 100%;
-    }
+    padding: 0 15px 0 15px;
 }
 
 h1 {
     font-family: consolas, "Courier New", monospace;
-    margin: auto;
     text-align: center;
-    border-bottom: 10px double #5f2b7b;
-    width: 250px;
+    width: fit-content;
+    border-bottom: #5f2b7b9c 5px dotted;
+}
+
+p {
+    font-family: sans-serif, monospace, "roboto";
+}
+
+.bi-github,
+.bi-linkedin {
+    transition: 0.5s ease;
+}
+
+.bi-github:hover,
+.bi-linkedin:hover {
+    rotate: 45deg;
 }
 
 header {
-    text-align: center;
+    & .profile {
+        background-color: #5f2b7b;
+        border: white solid 10px;
+        padding: 3px;
+        border-radius: 8px;
+    }
 
-    & p {
-        margin: 10px auto 0 auto;
-        width: 320px;
+    & .avatar {
+        max-width: 800px;
+        margin: 15px auto;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        padding: 20px 10px;
+        background-color: #eaf3ea !important;
+
+        & p {
+            max-width: 450px;
+            background-color: white;
+            margin: 0;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        img {
+            max-width: 150px;
+        }
     }
 }
 
@@ -82,6 +107,7 @@ main {
             border-radius: 0;
             border: none;
             background-color: rgb(0, 87, 0);
+            transition: background-color 0.3s ease-out;
         }
 
         & .btn:hover {
@@ -90,43 +116,20 @@ main {
     }
 }
 
-.fa-brands {
-    font-size: 1.2em;
-    color: rgb(0, 87, 0);
-}
-
-.fa-github:hover,
-.fa-linkedin:hover {
-    color: #5f2b7b;
-}
-
 footer {
     text-align: center;
     margin-top: 20px;
     padding-top: 50px;
     margin-bottom: 20px;
 
-    & .fa-frog {
-        color: rgb(0, 87, 0);
-        font-size: 2em;
-        margin: 0 20px;
-    }
-
-    & .fa-github,
-    .fa-linkedin {
-        font-size: 1.5em;
+    & .bi-linkedin,
+    .bi-github {
+        color: #5f2b7b;
     }
 }
 
-
-
 /*mobile styles*/
 @media only screen and (max-width: 780px) {
-    .avatar {
-        bottom: 15px;
-        right: 15px;
-    }
-
     main {
         & section {
             border: 10px outset #eaf3ea;
